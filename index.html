@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Our Solar System</title>
+  </head>
+  <body>
+
+    <div class="header-container">
+
+    </div>
+
+    <div class="page">
+      <div class="content-container">
+        <div class="planet-button-field">
+          <input id="sun" onclick="getApi(this.id)" type="image" src="https://cdn.pixabay.com/photo/2018/01/26/13/04/sun-3108640_960_720.png" alt="Sun"></input>
+          <input id="mercury" onclick="getApi(this.id)" type="image" src="https://cdn.pixabay.com/photo/2021/04/05/15/44/mercury-6153848_1280.png" alt="Mercury"></input>
+          <input id="venus" onclick="getApi(this.id)" type = 'image' src="https://cdn.pixabay.com/photo/2021/04/05/15/44/venus-6153849_1280.png" alt="Venus"></input>
+          <input id="earth" onclick="getApi(this.id)" type = 'image' src="https://cdn.pixabay.com/photo/2021/04/05/15/48/earth-6153854_1280.png" alt="Earth"></input>
+          <input id="mars" onclick="getApi(this.id)" type="image" src="https://cdn.pixabay.com/photo/2021/04/05/15/52/mars-6153858_960_720.png" alt="Mars"></input>
+          <input id="jupiter" onclick="getApi(this.id)" type="image" src="https://cdn.pixabay.com/photo/2021/04/05/15/52/jupiter-6153859_960_720.png" alt="Jupiter"></input>
+          <div class="saturn">
+            <input id="saturn" onclick="getApi(this.id)" type="image" src="https://cdn.pixabay.com/photo/2021/04/05/15/53/saturn-6153860_960_720.png" alt="Saturn"></input>
+          </div>
+          <input id="uranus" onclick="getApi(this.id)" type="image" src="https://cdn.pixabay.com/photo/2021/04/05/15/54/uranus-6153865_960_720.png" alt="Uranus"></input>
+          <input id="neptune" onclick="getApi(this.id)" type="image" src="https://cdn.pixabay.com/photo/2021/04/05/15/55/neptune-6153867_960_720.png" alt="Neptune"></input>
+        </div>
+      </div>
+      <div id="fixed-container">
+        <div id="info-box">
+          <div class="close-field">
+            <h1 id="planet-name">Welcome!</h1>
+            <button type="button" onClick="closeInfo()">⮿</button>
+          </div>
+          <hr>
+          <div id="planet-facts">
+            <p>Click on a planet to learn more about it.</p>
+          </div>
+        </div>
+      </div>
+      <div id="gap"></div>
+    </div>
+
+    <div class="footer-container">
+      <div class="links">
+        <p><a href="https://github.com/BYUCS260/weather-app-qfrewin">Github</a></p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+    <script text="type/javascript" src="/script.js">
+    </script>
+
+  </body>
+</html>

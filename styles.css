@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubic', sans-serif;
+  line-height: 180%;
+  color: white;
+}
+
+sup {
+  font-size: .5em;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  align-items: baseline;
+  background-image: url("https://cdn.pixabay.com/photo/2020/08/01/20/17/universe-5456206_960_720.jpg");
+  height: 200px;
+  border-bottom: solid black 2px;
+}
+
+.page {
+  background-image: url('https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png');
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.planet-button-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#sun,
+#mercury,
+#venus,
+#earth,
+#mars,
+#jupiter,
+#uranus,
+#neptune {
+  width: 200px;
+  margin: 20px;
+}
+.saturn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 20px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+#saturn {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+
+#fixed-container {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 0 20px;
+  padding-bottom: 40px;
+}
+
+#info-box {
+  display: flex;
+  width: 100%;
+  background-color: rgba(60, 60, 60, .2);
+  border-radius:  15px;
+  overflow: hidden;
+  background-image: url("https://cdn.pixabay.com/photo/2021/04/05/15/48/moon-6153855_960_720.png");
+  background-position: right 80% top 15%;
+  flex-direction: column;
+  border: white solid 1px;
+  background-repeat: no-repeat;
+}
+
+.close-field {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.close-field button {
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+}
+#planet-name {
+  margin-left: 10px;
+}
+.close-field button:hover {
+  background-color: red;
+}
+
+#planet-facts {
+  margin: 10px;
+}
+
+#gap {
+  display: flex;
+  background-color: transparent;
+  height: 145px;
+}
+
+.footer-container {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://cdn.pixabay.com/photo/2018/02/28/07/43/astronomy-3187445_960_720.jpg");
+  border-top: 1px black solid;
+}
+
+.footer-container .links a {
+  font-size: 24px;
+  padding: 10px;
+  background-color: rgba(60, 60, 60, .2);
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.footer-container .links a:hover {
+  background-color: rgba(120, 120, 120, .2);
+}

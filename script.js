@@ -131,7 +131,7 @@ function setBackground(json) {
   if (name == "Saturn") {
     imageSize = element.offsetWidth * 2.25;
   } else {
-    imageSize = element.offsetWidth;
+    imageSize = element.offsetWidth * 1.5;
   }
   element.style.backgroundSize = imageSize + "px";
   var pixelDifWidth = element.offsetWidth - imageSize;

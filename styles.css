@@ -3,12 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Rubic', sans-serif;
-  line-height: 180%;
+  line-height: 200%;
   color: white;
 }
 
 sup {
   font-size: .5em;
+}
+
+.content-container h1 {
+  padding-top: 20px;
 }
 
 .header-container {
@@ -17,20 +21,12 @@ sup {
   padding: 20px;
   align-items: baseline;
   background-image: url("https://cdn.pixabay.com/photo/2020/08/01/20/17/universe-5456206_960_720.jpg");
-  height: 200px;
-  border-bottom: solid black 2px;
-}
-
-.page {
-  background-image: url('https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png');
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
+  border-image-width: 100%;
   height: auto;
-  padding: 20px;
-  flex-wrap: nowrap;
-  overflow: hidden;
+  background-size: cover;
+  border-bottom: solid black 2px;
+  flex-direction: column;
+  font-size: 24px;
 }
 
 .planet-button-field {
@@ -67,28 +63,6 @@ sup {
   align-items: center;
   overflow: hidden;
   flex-wrap: nowrap;
-}
-
-#fixed-container {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  padding: 0 20px;
-  padding-bottom: 40px;
-}
-
-#info-box {
-  display: flex;
-  width: 100%;
-  background-color: rgba(60, 60, 60, .2);
-  border-radius:  15px;
-  overflow: hidden;
-  background-image: url("https://cdn.pixabay.com/photo/2021/04/05/15/48/moon-6153855_960_720.png");
-  background-position: right 80% top 15%;
-  flex-direction: column;
-  border: white solid 1px;
-  background-repeat: no-repeat;
 }
 
 .close-field {
@@ -130,6 +104,11 @@ sup {
   justify-content: center;
   background-image: url("https://cdn.pixabay.com/photo/2018/02/28/07/43/astronomy-3187445_960_720.jpg");
   border-top: 1px black solid;
+  background-size: cover;
+}
+
+.content-container {
+  text-align: center;
 }
 
 .footer-container .links a {
@@ -143,4 +122,86 @@ sup {
 
 .footer-container .links a:hover {
   background-color: rgba(120, 120, 120, .2);
+}
+
+@media only screen and (max-width: 650px) {
+  .page {
+  background-image: url('https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png');
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+#fixed-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 0 20px;
+  padding-bottom: 40px;
+}
+
+  #info-box {
+    display: flex;
+    width: 100%;
+    background-color: rgba(60, 60, 60, .2);
+    border-radius:  15px;
+    overflow: hidden;
+    background-image: url("https://cdn.pixabay.com/photo/2021/04/05/15/48/moon-6153855_960_720.png");
+    background-position: right 80% top 15%;
+    flex-direction: column;
+    border: white solid 1px;
+    background-repeat: no-repeat;
+  }
+
+  .header-container {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 651px) {
+  .page {
+    background-image: url('https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+  }
+
+  #fixed-container {
+    display: none;
+    position: sticky;
+    top: 0px;
+    width: 50vw;
+    height: 100vh;
+    padding: 20px 10px;
+  }
+
+  #info-box {
+    display: flex;
+    width: 100%;
+    background-color: rgba(60, 60, 60, .2);
+    border-radius:  15px;
+    overflow: hidden;
+    background-image: url("https://cdn.pixabay.com/photo/2021/04/05/15/48/moon-6153855_960_720.png");
+    background-position: right 80% top 15%;
+    flex-direction: column;
+    border: white solid 1px;
+    background-repeat: no-repeat;
+  }
+  #info-box p {
+    font-size: 18px;
+  }
+  #info-box h1 {
+    font-size: 30px;
+  }
+
 }

@@ -88,12 +88,16 @@ sup {
 
 #planet-facts {
   margin: 10px;
+  overflow-y: scroll;
 }
 
 #gap {
   display: flex;
   background-color: transparent;
-  height: 145px;
+}
+
+#planet-facts::-webkit-scrollbar {
+  display: none;
 }
 
 .footer-container {
@@ -128,22 +132,22 @@ sup {
   .page {
   background-image: url('https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png');
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap:nowrap;
+  overflow: hidden;
+  justify-content: center;
   width: 100%;
   height: auto;
   padding: 20px;
-  flex-wrap: nowrap;
-  overflow: hidden;
 }
 
 #fixed-container {
   display: none;
   position: fixed;
   width: 100%;
-  bottom: 0;
-  padding: 0 20px;
-  padding-bottom: 40px;
+  top: 0;
+  padding: 20px 40px;
+  height: 100vh;
 }
 
   #info-box {
@@ -167,11 +171,14 @@ sup {
 }
 
 @media only screen and (min-width: 651px) {
+  .header-container {
+    padding: 10px 30px;
+  }
   .page {
     background-image: url('https://cdn.pixabay.com/photo/2018/10/16/07/07/stars-3750824_960_720.png');
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     height: auto;
   }
